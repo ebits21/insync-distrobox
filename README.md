@@ -51,6 +51,11 @@ sh make-insync-container.sh
 ## Sign-in
 You should now be able to use Insync as usual!
 
+## WORKAROUND: Autostart Fix
+The script does not properly insert quotations in the autostart entry. To fix this, edit the `fed-insync*.desktop` file in `/home/USERNAME/.config/autostart` to add quotation marks:
+```
+/usr/bin/distrobox-enter -n fed-insync -- /bin/sh -l -c "insync start"
+```
 
 ---
 # Credits
