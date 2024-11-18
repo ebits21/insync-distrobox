@@ -34,7 +34,14 @@ sudo zypper install distrobox
 ---
 # Installation
 ## Download
-Download the `make-insync-container.sh` file above.
+Download the `make-insync-container.sh` or `make-insync-rpm-container.sh` files manually or by cloning the repo. If using https authentication:
+```
+git clone https://github.com/ebits21/insync-distrobox.git
+```
+if using ssh authentication:
+```
+git clone git@github.com:ebits21/insync-distrobox.git
+```
 
 ## (Optional) Changing the Container Name
 The container will be named `fedora-distrobox` by default. If you would like a different name, edit the `CONTAINER` variable in the script. (*Do not use special symbols or spaces.*)
@@ -43,7 +50,7 @@ CONTAINER=my-new-insync-container-name
 ```
 
 ## Run Script
-Navigate to the directory you saved the script in and execute:
+There are two options. Navigate to the directory you saved the script in and execute either:
 ```
 sh make-insync-container.sh
 ```
