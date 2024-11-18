@@ -47,6 +47,11 @@ Navigate to the directory you saved the script in and execute:
 ```
 sh make-insync-container.sh
 ```
+This script adds the Insync repo manually and then installs Insync. Alternatively run:
+```
+sh make-insync-rpm-container.sh
+```
+This version downloads the appropriate .rpm and installs the .rpm
 
 ## Sign-in
 You should now be able to use Insync as usual!
