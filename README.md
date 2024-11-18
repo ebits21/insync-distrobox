@@ -3,7 +3,7 @@ A Bash script to create a Fedora container in [distrobox](https://github.com/89l
 
 ---
 # Host Requirements
-[distrobox](https://github.com/89luca89/distrobox) must be installed on your host system and is available in nearly all distribution repositories.
+[distrobox](https://github.com/89luca89/distrobox) must be installed on your host system (only tested with a Podman backend) and is available in nearly all distribution repositories.
 
 ## Arch (and derivatives)
 ```
@@ -52,7 +52,7 @@ sh make-insync-container.sh
 You should now be able to use Insync as usual!
 
 ## WORKAROUND: Autostart Fix
-The script does not properly insert quotations in the autostart entry. To fix this, edit the `fed-insync*.desktop` file in `/home/USERNAME/.config/autostart` to add quotation marks:
+If Insync does not start at boot, edit the `fed-insync*.desktop` file in `/home/USERNAME/.config/autostart` and add quotation marks:
 ```
 /usr/bin/distrobox-enter -n fed-insync -- /bin/sh -l -c "insync start"
 ```
