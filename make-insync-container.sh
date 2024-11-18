@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONTAINER=fed-insync
+CONTAINER=fedora-distrobox
 INSYNC_GPG_KEY=https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
 DISTRO=fedora
 # I can't escape $releasever properly for some reason, so hard coding version.
@@ -8,8 +8,9 @@ DISTRO=fedora
 VERSION=40
 INSYNC_URL=http://yum.insync.io/$DISTRO/$VERSION/
 
-# Create Distrobox container
-distrobox rm $CONTAINER
+# Remove container if it exists and create new distrobox container
+distrobox rm $CONTAINER -f
+echo "Creating container $CONTAINER"
 distrobox create --name $CONTAINER --image $DISTRO:$VERSION
 
 # Enter the container and perform all necessary steps
@@ -49,4 +50,4 @@ if ! cp ~/.local/share/applications/$CONTAINER-insync.desktop ~/.config/autostar
     exit 1
 fi
 
-echo "Insync setup completed successfully!"
+echo "Insync setup completed"

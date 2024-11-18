@@ -37,7 +37,7 @@ sudo zypper install distrobox
 Download the `make-insync-container.sh` file above.
 
 ## (Optional) Changing the Container Name
-The container will be named `fed-insync` by default. If you would like a different name, edit the `CONTAINER` variable in the script. (*Do not use special symbols or spaces.*)
+The container will be named `fedora-distrobox` by default. If you would like a different name, edit the `CONTAINER` variable in the script. (*Do not use special symbols or spaces.*)
 ```
 CONTAINER=my-new-insync-container-name
 ```
@@ -52,9 +52,9 @@ sh make-insync-container.sh
 You should now be able to use Insync as usual!
 
 ## WORKAROUND: Autostart Fix
-If Insync does not start at boot, edit the `fed-insync*.desktop` file in `/home/USERNAME/.config/autostart` and add quotation marks:
+If Insync does not start at boot, edit the `fedora-distrobox*.desktop` file in `/home/USERNAME/.config/autostart` and add quotation marks:
 ```
-/usr/bin/distrobox-enter -n fed-insync -- /bin/sh -l -c "insync start"
+/usr/bin/distrobox-enter -n fedora-distrobox -- /bin/sh -l -c "insync start"
 ```
 
 ---
