@@ -1,5 +1,5 @@
 # insync-distrobox
-A Bash script to create a Fedora container (latest supported container version is Fedora 40) in [distrobox](https://github.com/89luca89/distrobox), install [Insync](https://www.insynchq.com/), and start it automatically on login.
+Bash script(s) to create a Fedora container (latest supported container version is Fedora 40) in [distrobox](https://github.com/89luca89/distrobox), install [Insync](https://www.insynchq.com/), and start it automatically on login.
 
 ---
 # Host Requirements
@@ -20,6 +20,7 @@ sudo apt install distrobox
 rpm-ostree install distrobox
 ```
 * Restart required after installing `distrobox` and prior to running the script.
+* Universal Blue variants Bluefin, Aurora, and Bazzite should already have distrobox installed.
 
 ## Fedora Workstation
 ```
