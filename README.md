@@ -64,6 +64,9 @@ This version downloads the appropriate .rpm and installs the .rpm
 ## Sign-in
 You should now be able to use Insync as usual!
 
+## App Indicators
+If using Gnome shell on the host I recommend using the [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) extension to see Insync's app indicator.
+
 ## WORKAROUND: Autostart Fix
 If Insync does not start at boot, edit the `fedora-distrobox*.desktop` file in `/home/USERNAME/.config/autostart` and add quotation marks:
 ```
