@@ -1,5 +1,5 @@
 # insync-distrobox
-Bash script(s) to create a Fedora container (latest supported container version is Fedora 40) in [distrobox](https://github.com/89luca89/distrobox), install [Insync](https://www.insynchq.com/), and start it automatically on login.
+Bash script(s) to create a Fedora container (latest supported container version is Fedora 41) in [distrobox](https://github.com/89luca89/distrobox), install [Insync](https://www.insynchq.com/), and start it automatically on login.
 
 ---
 # Host Requirements

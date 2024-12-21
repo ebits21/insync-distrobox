@@ -4,8 +4,8 @@ CONTAINER=fedora-distrobox
 INSYNC_GPG_KEY=https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
 DISTRO=fedora
 # I can't escape $releasever properly for some reason, so hard coding version.
-# fedora 40 is the latest support version
-VERSION=40
+# fedora 41 is the latest supported version
+VERSION=41
 INSYNC_URL=http://yum.insync.io/$DISTRO/$VERSION/
 
 # Remove container if it exists and create new distrobox container

@@ -2,8 +2,8 @@
 
 CONTAINER=fedora-distrobox
 DISTRO=fedora
-VERSION=40
-INSYNC_RPM=https://cdn.insynchq.com/builds/linux/3.9.4.60020/insync-3.9.4.60020-fc40.x86_64.rpm
+VERSION=41
+INSYNC_RPM=https://cdn.insynchq.com/builds/linux/3.9.4.60020/insync-3.9.4.60020-fc41.x86_64.rpm
 # insync download links json https://cdn.insynchq.com/web/webflow/js/linux_download_links.js
 # in var = linux_download_links
 
